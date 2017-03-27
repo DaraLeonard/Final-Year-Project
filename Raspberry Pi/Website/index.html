@@ -1,0 +1,86 @@
+<html>
+<head>
+</head>
+
+<style>
+body {background-color: hotpink}
+h1 {color:black}
+
+button {
+	color: black;
+	background:white;
+	border: 1px solid #000;
+	border-radius: 8px;
+	position: center;
+}
+
+</style>
+
+<body>
+<div style="text-align:center">
+<h1>PiBot's Controlls</h1>
+<br><br>
+
+<iframe src="http://140.203.190.0:9000/javascript_simple.html" frameborder="0" align="left" 
+	width="640" height="480" align="left" scrolling="no"></iframe>
+
+<span style="display:inline-block;padding:5px;border:1px solid #fc0; font-size: 140%;font-weight: bold;">
+<br>
+
+    <button style="height: 75px; width: 75px" onclick="forward()"><img style="height: 65px"src="images/forward.png"></button>
+    <br><br><br><br>
+    <img hspace="10" style="padding-left: 5px">
+
+    <button style="height: 75px; width: 75px" onclick="left()"><img style="height: 65px"src="images/left.png"></button>
+    <img hspace="20" style="padding-left: 10px">
+
+    <button style="height: 75px; width: 75px" onclick="stop()"><img style="height: 63px"src="images/stop.jpg"></button>
+    <img hspace="20" style="padding-left: 10px">
+
+    <button style="height: 75px; width: 75px" onclick="right()"><img style="height: 65px"src="images/right.png"></button>
+    <img hspace="10" style="padding-left: 5px">
+    <br><br><br><br>
+
+    <button style="height: 75px; width: 75px" onclick="reverse()"><img style="height: 65px"src="images/reverse.png"></button>
+
+
+<br><br>
+</span>
+
+</div>
+
+<script>
+var xmlhttp;
+xmlhttp=new XMLHttpRequest();
+
+function forward()
+{
+	xmlhttp.open("GET","cgi-bin/forward.cgi",true);
+	xmlhttp.send();
+}
+function stop()
+{
+	xmlhttp.open("GET","cgi-bin/stop.cgi",true);
+	xmlhttp.send();
+}
+function left()
+{
+	xmlhttp.open("GET","cgi-bin/left.cgi",true);
+	xmlhttp.send();
+}
+function right()
+{
+	xmlhttp.open("GET","cgi-bin/right.cgi",true);
+	xmlhttp.send();
+}
+function reverse()
+{
+	xmlhttp.open("GET","cgi-bin/backward.cgi",true);
+	xmlhttp.send();
+}
+
+
+</script>
+
+</body>
+</html>
