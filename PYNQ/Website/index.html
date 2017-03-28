@@ -65,14 +65,7 @@
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
             <img  src="img/nui-galway.jpg" alt="">
             </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+            <br/><br/><br/><br/><br/><br/><br/><br/>
             <h6 style="color:black;" class="wow fadeInDown" data-wow-duration="3s"> This is a webpage created to to display the work I've undertaken as part of my final year project for the Electronic and Computer Engineering course at NUI Galway</h6>
         </div>        
     </div>
@@ -86,9 +79,16 @@
 
              <div class="myapps row">
                 <h6 class="wow fadeInUp" data-wow-duration="3s">
-                    This was developed for and does ....
-                     <br/>
-                 </h6>
+                    This project was developed using a Raspberry Pi and Xilinx's new PYNQ Z-1 board.
+                    
+                    The Raspberry Pi was developed as a proof of concept and its control page can be found <a href="Pi IP Address">here.</a><br/><br/>
+                    The final system is conprised of a robot, developed using the PYNQ Z-1, which has to modes of operation, a manual mode and an autonomous mode.
+                    <br/><br/>
+                    <a href="Manual Mode Notebook Address">Manual mode </a> allows the system's user to control the robot's movements (forward, reverse, left, right, stop) using widgets developed using Python. The manual mode user screen is thr Jupyter Notebook where all of the robot's control code is displayed.
+                    <br/><br/>
+                    <a href="Autonomous Mode Notebook Address">Autonomous mode </a> allows the system to act autonomously. The user selects a lower and upper range of colours in the HSV space using slider widgets. After the values are selected, the image processing algorithm running on the robot will filter out all colour that's outside the specified upper and lower ranges. The algorithm will then turn on the robot's controls so it will follow the desired colour.
+                    <br/><br/><br/><br/>
+                </h6>
             </div>   
     </div>
         
@@ -99,45 +99,45 @@
              </div>
 
             <div class="row">
-                   <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
-                       <img  src="img/OpenCV.png" alt="">
-                       <h5>OpenCV</h5>
-                       <p>OpenCV Description</p>
+                     <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                       <img src="img/raspberrypi.png" alt="">
+                        <h5>Raspberry Pi</h5>
+                        <p>The proof of concept system was developed on a Raspberry Pi 3 board</p>
                     </div>
-
+                
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                       <img src="img/pynq.png" alt="">
+                        <h5>Xilinx PYNQ Board</h5>
+                        <p>The final system with manual and autonomous mode was developed on Xilinx's now PYNQ Z-1 board. 
+                            <br/>Available since October 2016.</p>
+                    </div>
+                
                     <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
                        <img src="img/python.png" alt="">
                         <h5>Python Programming</h5>
-                        <p>Python Description</p>
-                    </div> 
-
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
-                       <img src="img/linux.jpg" alt="">
-                        <h5>Linux</h5>
-                        <p>Linux Description</p>
+                        <p>The robot's control and image processing algorithm were developed using the Python programming language.
+                        </p>
                     </div>
              </div>
         
-            <div class="row">
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
-                       <img src="img/raspberrypi.png" alt="">
-                        <h5>Raspberry Pi</h5>
-                        <p>Pi Description</p>
-                    </div>
-
-                   <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
-                       <img src="img/jupyter.png" alt="">
-                        <h5>Jupyter Notebooks</h5>
-                        <p>NB Description</p>
-                    </div>
-                    
+            <div class="row"> 
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
-                       <img src="img/pynq.png" alt="">
-                        <h5>Xilinx PYNQ Board</h5>
-                        <p>PYNQ Description</p>
-                    </div>
-                     
+                    <img src="img/jupyter.png" alt="">
+                    <h5>Jupyter Notebooks</h5>
+                    <p>The Python developemnt was done using Jupyter Notebooks. The Jupyter Notebook server is running on the PYNQ's ARM Cortex-A9 processor.</p>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                    <img  src="img/OpenCV.png" alt="">
+                    <h5>OpenCV</h5>
+                    <p>OpenCV libraries were used for the image processing algorithm.</p>
+                </div>
 
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                    <img src="img/linux.jpg" alt="">
+                    <h5>Linux</h5>
+                    <p>The PYNQ's is running a Linux operating system. It's running the 10.15 version of Ubuntu. The operating system allows connectivity to a network, which enable the Internet of Things functionality of the system.</p>
+                </div>
             </div>
     </div>
         
@@ -146,10 +146,10 @@
     </div>
         
     <div id="vids" class="container">    
-            <div class="sectionhead  row wow fadeInUp">
+        <div class="sectionhead  row wow fadeInUp">
             <h3>Videos</h3>
             <hr class="separetor">
-         </div>
+        </div>
          
        <div class="grid">
             <div class="row">
